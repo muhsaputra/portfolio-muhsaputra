@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Tailwind -->
+    <link href="dist/output.css" rel="stylesheet" />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <!-- Aos -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- FavIcon -->
+    <link rel="icon" href="professional-portfolio.ico" type="image">
+    <title>LostVayne | MuhSaputra</title>
+  </head>
+  <body>
+
+    <!-- HEADER START -->
+    <header
+      class="bg-[#A9071C] fixed bg-transparent top-0 left-0 w-full flex items-center z-10 drop-shadow-lg"
+    >
+      <div class="container mx-auto">
+        <div class="flex items-center justify-between relative">
+          <div class="px-6 lg:px-[75px]">
+            <a href="#home" class="font-bold text-xl text-[#EBEFF0] block py-6"
+              >MuhSaputra<span class="text-red-500">.</span></a
+            >
+          </div>
+          <div class="flex items-center px-4">
+            <button
+              id="hamburger"
+              name="hamburger"
+              type="button"
+              class="block absolute right-4 lg:hidden"
+            >
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-top-left"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out"
+              ></span>
+              <span
+                class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"
+              ></span>
+            </button>
+            <!-- navbar start -->
+            <nav
+              id="nav-menu"
+              class="hidden absolute py-3 bg-[#A9071C] shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:static lg:bg-transparent lg:max-w-full lg:shadow-none lg:rounded-none"
+            >
+              <ul class="block lg:flex">
+                <li class="group">
+                  <a
+                    href="#home"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >Home</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#about"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >About</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#skills"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >Skills</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#projects"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >Projects</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#experience"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >Experience</a
+                  >
+                </li>
+                <li class="group">
+                  <a
+                    href="#contact"
+                    class="font-semibold text-[#EBEFF0] py-2 mx-8 flex justify-center hover:text-[#FF1231] transition duration-200"
+                    >Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <!-- navbar end -->
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- HEADER END -->
+
+    <!-- HERO SECTION START-->
+    <div
+      class="w-ful h-full bg-no-repeat bg-cover"
+      style="background-image: url(dist/img/bacground/wave1.svg)"
+    >
+      <!-- *****  HERO SECTION START  ***** -->
+      <section id="home" class="pt-36 pb-[210px] font-Poppins">
+        <div class="container mx-auto">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center font-Poppins">
+              <img
+                src="dist/img/Profile/foto_profil.jpg"
+                alt=""
+                class="rounded-full w-40 h-40 mx-auto mb-2 drop-shadow-xl"
+                data-aos="fade-up" data-aos-duration="500"
+              />
+              <h1 class="font-semibold text-2xl text-[#EBEFF0] drop-shadow-sm sm:text-xl" data-aos="fade-up" data-aos-duration="500">
+                Muhamad Tri Saputra
+              </h1>
+              <p class="font-light text-[#EBEFF0]" data-aos="fade-up" data-aos-duration="600">Student | Front End</p>
+            </div>
+
+            <!-- Social Medisa Start-->
+            <div class="flex items-center justify-center">
+              <!-- Instagram -->
+              <a
+                href="https://www.instagram.com/muhsaputra._/"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] hover:text-red-500 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-duration="500"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Instagram</title>
+                  <path
+                    d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"
+                  />
+                </svg>
+              </a>
+
+              <!-- github -->
+              <a
+                href="https://github.com/muhsaputra"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] 0 hover:text-red-500 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-duration="700"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>GitHub</title>
+                  <path
+                    d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                  />
+                </svg>
+              </a>
+
+              <!-- Youtube -->
+
+              <a
+                href="https://www.youtube.com/channel/UClAn1OOB25g70Ea1FpzjxbQ"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] hover:text-red-500 transition duration-300 hover:scale-105105" data-aos="fade-up" data-aos-duration="800"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>YouTube</title>
+                  <path
+                    d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"
+                  />
+                </svg>
+              </a>
+
+              <!-- Discord -->
+              <a
+                href="https://discord.gg/gysjRxvrr6"
+                target="_blank"
+                class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] hover:text-red-600 transition duration-300 hover:scale-105" data-aos="fade-up" data-aos-duration="1000"
+              >
+                <svg
+                  role="img"
+                  width="20"
+                  class="fill-current"
+                  viewBox="0 0 24 24"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <title>Discord</title>
+                  <path
+                    d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <!-- Social Media End -->
+
+            <!-- Button Start -->
+            <div class="max-w-xl mx-auto text-center font-Poppins ">
+              <a href="#about">
+                <button class="tombol" data-aos="fade-up" data-aos-duration="900">About Me</button>
+              </a>
+            </div>
+            <!-- Button End -->
+          </div>
+        </div>
+      </section>
+      </div>
+    <!-- HERO SECTION END-->
+
+    <!-- ABOUT SECTION START -->
+    <section id="about" class="pt-24">
+      <div class="container mx-auto">
+        <div class="flex flex-wrap flex-row-reverse">
+          <div
+            class="w-screen self-center px-10 lg:px-28 lg:w-1/2 font-Poppins"
+          >
+            <h1
+              class="text-base font-semibold text-[#A9071C] md:text-xl text-center" data-aos="fade-up" data-aos-duration="500"
+            >
+              Hello Everyone, im
+              <span
+                class="block font-semibold text-text-[#A9071C] text-3xl lg:text-4xl"
+                >Muhamad Tri Saputra</span 
+              >
+            </h1>
+            <h2
+              class="font-medium text-[#A9071C] text-lg mb-5 lg:2xl lg:mt-1 text-center" data-aos="fade-up" data-aos-duration="500"
+            >
+              Student | Front End
+            </h2>
+            <p
+              class="font-normal text-slate-700 mb-8 leading-relaxed text-center" 
+              data-aos="fade-up" data-aos-duration="500"
+            >
+              I am an ordinary child who wants to become a website & software
+              developer, since I was little I have been given gadgets such as
+              laptops etc, and I find technology very fun for me.
+            </p>
+            <p
+              class="font-normal text-slate-700 mb-8 leading-relaxed text-center"
+              data-aos="fade-up" data-aos-duration="500"
+            >
+              <i
+                >"Percikan kebahagian mencair dan menjadikan lautan. Gumpalan
+                kesedihan mencair dan jadilah lautan."</i
+              >
+            </p>
+
+            <!-- button -->
+            <button class="learn-more flex mx-auto hover:drop-shadow-xl transition" data-aos="fade-up" data-aos-duration="500">
+              <span class="circle" aria-hidden="true">
+                <span class="icon arrow"></span>
+              </span>
+              <a href="#skills">
+              <span class="button-text">My Skills</span>
+              </a>
+            </button>
+          </div>
+          <div class="w-full px-4 lg:w-1/2 flex justify-center">
+            <div class="mt-10 lg:mt-0 lg:ml-6 xl:right-0">
+              <img
+                src="dist/img/Profile/lottie.gif"
+                alt="MuhSaputra"
+                class="max-w-sm lg:max-w-lg mx-auto"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+    <!-- SKILLS SECTION START -->
+    <section id="skills" class="pt-36 pb-44 font-Poppins">
+      <div class="container mx-auto">
+        <div class="w-full px-[75px]">
+          <div class="max-w-xl mx-auto text-center mb-16">
+            <h1 class="font-bold text-[#A9071C] text-center md:text-xl" data-aos="fade-up" data-aos-duration="500">
+              Skills
+            </h1>
+            <h1 class="font-bold text-[#A9071C] text-center text-4xl drop-shadow-sm" data-aos="fade-up" data-aos-duration="500"><span class="text-[#111A21]">My</span> Skills</h1>
+          </div>
+          <!-- Skills Start -->
+          <div class="flex justify-center" data-aos="fade-up" data-aos-duration="500">
+            <div class="skills_main">
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>HTML</p>
+                        <P>68%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="html"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>CSS</p>
+                        <P>50%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="css"></span>
+                    </div>
+                </div>
+                
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>UI/UX</p>
+                        <P>70%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="ui"></span>
+                    </div>
+                </div>
+                
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Javascript</p>
+                        <P>5%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="js"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>Tailwind</p>
+                        <P>68%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="tailwind"></span>
+                    </div>
+                </div>
+                <div class="skill_bar">
+                    <div class="info">
+                        <p>BootStrap</p>
+                        <P>40%</P>
+                    </div>
+                    <div class="bar">
+                        <span class="bootstrap"></span>
+                    </div>
+                </div>
+            </div>
+          </div>
+            <!-- Button Project -->
+            <div class="flex justify-center pt-5 font-Poppins font-semibold" data-aos="fade-up" data-aos-duration="500">
+              <a href="#projects">
+                <button class="tombol2">My Project</button>
+              </a>
+            </div>
+            </a> 
+        </div>
+          <!-- Skills End -->
+        </div>
+      </div>
+    </section>
+    <!-- SKILLS SECTION END -->
+
+    <!-- PROJECT SECTION START -->
+    <section id="projects" class="pt-36 pb-16 bg-slate-100 font-Poppins">
+      <div class="container mx-auto">
+          <div class="w-full px-4">
+              <div class="max-w-xl mx-auto text-center mb-16 font-Poppins">
+                <h1 class="font-bold text-[#A9071C] text-center md:text-xl" data-aos="fade-up" data-aos-duration="500">
+                  Projects
+                </h1> 
+                <h1 class="font-bold text-[#A9071C] text-center text-4xl drop-shadow-sm" data-aos="fade-up" data-aos-duration="500"><span class="text-[#111A21]">My</span> projects</h1>
+              </div>
+          </div>
+          
+          <div class="w-full px-4 flex flex-wrap justify-center xl:w-10/12 xl:mx-auto">
+              <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up">
+                  <div class="rounded-xl shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition duration-200">
+                      <img src="dist/img/project/LostVayne-MuhSaputra.png" alt="landingpage" width="w-full">
+                  </div>
+              </div>
+              <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-duration="500">
+                  <div class="rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition duration-200">
+                      <img src="dist/img/project/portfolio4.png" alt="landingpage" width="w-full">
+                  </div>
+              </div>
+              <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-duration="600">
+                  <div class="rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition duration-200">
+                      <img src="dist/img/project/bg3.png" alt="landingpage" width="w-full">
+                  </div>
+              </div>
+              <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-duration="700">
+                  <div class="rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition duration-200">
+                      <img src="dist/img/project/bg2.png" alt="landingpage" width="w-full">
+                  </div>
+              </div>
+              <div class="mb-12 p-4 md:w-1/2" data-aos="fade-up" data-aos-duration="700">
+                  <div class="rounded-lg shadow-md overflow-hidden hover:shadow-lg hover:scale-105 transition duration-200">
+                      <img src="dist/img/project/g1.png" alt="landingpage" width="w-full">
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+    <!-- PROJECT SECTION END -->
+
+    <!-- EXPERIENCE SECTION START -->
+    <section id="experience" class="pt-36 pb-16 font-Poppins">
+        <div class="container1 mx-auto">
+          <div class="w-full px-[75px]">
+            <div class="max-w-xl mx-auto text-center mb-16 font-Poppins">
+              <h1 class="font-bold text-[#A9071C] text-center md:text-xl" data-aos="fade-up" data-aos-duration="500">
+                Experience
+              </h1> 
+              <h1 class="font-bold text-[#A9071C] text-center text-4xl drop-shadow-sm" data-aos="fade-up" data-aos-duration="500"><span class="text-[#111A21]">My</span> Experience</h1>
+            </div>
+
+            <!-- Experience Start -->
+            <div class="experience">
+              <div class="container1">
+                  <ul data-aos="fade-up" data-aos-duration="500">
+                      <li>
+                          <h3 class="title">Front End Developer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                          <a href="#">Read More ></a>
+                          <span class="circle"></span>
+                          <span class="date">January 2022</span>
+                      </li>
+                      <li>
+                          <h3 class="title">Back End Developer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                          <a href="#">Read More ></a>
+                          <span class="circle"></span>
+                          <span class="date">February 2022</span>
+                      </li>
+                      <li>
+                          <h3 class="title">Full Stack Developer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                          <a href="#">Read More ></a>
+                          <span class="circle"></span>
+                          <span class="date">March 2022</span>
+                      </li>
+                      <li>
+                          <h3 class="title">App Developer</h3>
+                          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem eaque quidem esse? Incidunt, odit beatae?</p>
+                          <a href="#">Read More ></a>
+                          <span class="circle"></span>
+                          <span class="date">April 2022</span>
+                      </li>
+                  </ul>
+              </div>
+            </div>
+            <!-- Experience End -->
+          </div>
+        </div>
+    </section>
+    <!-- EXPERIENCE SECTION END -->
+
+    <!-- QUOTES SECTION START -->
+    <div class="w-ful h-full bg-no-repeat bg-cover bg-fixed"
+      style="background-image: url(dist/img/bacground/wave.svg)">
+      <section id="#" class="pt-16 pb-[75px] font-Poppins">
+        <div class="container mx-auto">
+          <div class="w-full px-4">
+            <div class="max-w-xl mx-auto text-center font-Poppins">
+              <h1 class="font-bold text-[#EBEFF0] text-center md:text-xl drop-shadow-lg">
+                Quotes
+              </h1> 
+              <h1 class="font-bold text-[#EBEFF0] text-center text-4xl drop-shadow-lg"><span class="text-[#111A21]">My</span> Motivation</h1>
+              <p class="text-[#EBEFF0] drop-shadow-lg pt-4"><i>“Percikan Kebahagiaan mencair dan menjadikan lautan, 
+                gumpalan Kesedihan Mencair Dan Jadilah Lautan.”</i></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      </div>
+    <!-- QUOTES SECTION END -->
+
+    <!-- CONTACT SECTION START -->
+    <section id="contact" class="pt-36 pb-32">
+      <div class="container mx-auto">
+          <div class="w-full px-4">
+              <div class="max-w-xl mx-auto text-center mb-16 font-Poppins">
+                <h1 class="font-bold text-[#A9071C] text-center md:text-xl" data-aos="fade-up" data-aos-duration="500">
+                  Contact
+                </h1> 
+                <h1 class="font-bold text-[#A9071C] text-center text-4xl drop-shadow-sm" data-aos="fade-up" data-aos-duration="500"><span class="text-[#111A21]">My</span> Contact</h1>
+              </div>
+          </div>
+              <form>
+                  <div class="w=full lg:w-2/3 lg:mx-auto">
+                      <div class="w-full mb-8 px-4">
+                        <label for="email" id="email">
+                          <span class="block font-semibold mb-1 text-slate-700  after:text-pink-500 after:ml-0.5">Name</span>
+                          <input type="name" placeholder="Your Name" class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:slate-400 focus:outline-none focus:ring-1 focus:ring-[#A9071C] focus:border-[#A9071C] focus:duration-100 invalid:text-pink-700 
+                          invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+                        </label>
+                      </div>
+                      <div class="w-full mb-5 px-4">
+                        <label for="email" id="email">
+                          <span class="block font-semibold mb-1 text-slate-700  after:text-pink-500 after:ml-0.5">Email</span>
+                          <input type="email" placeholder="Your Email" class="px-3 py-2 border shadow rounded w-full block text-sm placeholder:slate-400 focus:outline-none focus:ring-1 focus:ring-[#A9071C] focus:border-[#A9071C] focus:duration-100 invalid:text-pink-700 
+                          invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer">
+                          <p class="text-sm m-1 text-pink-700 invisible peer-invalid:visible ">Email yang anda masukan tidak sesuai</p>
+                        </label>
+                      </div>
+                      <div class="w-full mb-8 px-4">
+                          <label for="messege"  class="text-[#A9071C] text-base font-bold"></label>
+                          <span class="block font-semibold mb-1 text-slate-700 after:content-['*'] after:text-pink-500 after:ml-0.5">Messege</span>
+                          <textarea type="text" id="email" class="border shadow rounded w-full block text-sm placeholder:slate-400 focus:outline-none focus:ring-1 focus:ring-[#A9071C] focus:border-[#A9071C] focus:duration-100 invalid:text-pink-700 
+                          invalid:focus:ring-pink-700 invalid:focus:border-pink-700 peer transition h-32"></textarea>
+                      </div>
+
+                      <!-- Button Start -->
+          <div class="pl-4 font-Poppins ">
+            <a href="#about">
+              <button class="tombol3 ">
+                <span> Send
+                </span>
+              </button>
+            </a>
+          </div>
+          <!-- Button End -->
+                  </div>
+          </form>
+
+          
+      </div>
+      </section>
+    <!-- CONTACT SECTION END -->
+
+    <!-- FOOTER SECTION START -->
+    <div class="w-ful h-full bg-no-repeat bg-cover"
+      style="background-image: url(dist/img/bacground/wave2.svg)">
+        <footer class=" pt-14 pb-12">
+        <div class="container mx-auto">
+            <div class="flex flex-wrap">
+                <div class="w-full px-4 mb-12 text-[#FFFFFF] font-medium">
+                  <a href="#home" class="font-bold text-4xl text-[#EBEFF0] justify-center flex ">MuhSaputra<span class="text-red-500">.</span></a>
+                    <H3 class="font-medium text-2xl  justify-center flex pt-5 ">Contact Me</H3>
+                    <p class="justify-center flex">muhsaputrabiz@gmail.com</p>
+
+                    <p
+                  class="font-normal text-slate-200 pt-3 leading-relaxed text-center ">
+                  "Mencintaimu adalah halusinasi, Kamu objek yang nyata namun terasa <i>Fatamorgana</i>"
+                </p>
+                </div>
+
+                <!-- <div class="w-full px-14 mb-12 md:w-1/3">
+                    <h3 class="font-semibold text-xl text-[#EBEFF0] mb-5">Link</h3>
+                    <ul>
+                        <li>
+                            <a href="#home" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">About</a>
+                        </li>
+                        <li>
+                            <a href="#skills" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#projects" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#experience" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#contact" class="inline-block text-base text-[#EBEFF0] hover:text-[#F0001F] transition">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div> -->
+
+            <div class="w-full pt-10 border-top border-slate-700">
+                <div class="flex items-center justify-center -mb-1">
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/muhsaputra._/" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] transition duration-300 hover:scale-110">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Instagram</title><path d="M12 0C8.74 0 8.333.015 7.053.072 5.775.132 4.905.333 4.14.63c-.789.306-1.459.717-2.126 1.384S.935 3.35.63 4.14C.333 4.905.131 5.775.072 7.053.012 8.333 0 8.74 0 12s.015 3.667.072 4.947c.06 1.277.261 2.148.558 2.913.306.788.717 1.459 1.384 2.126.667.666 1.336 1.079 2.126 1.384.766.296 1.636.499 2.913.558C8.333 23.988 8.74 24 12 24s3.667-.015 4.947-.072c1.277-.06 2.148-.262 2.913-.558.788-.306 1.459-.718 2.126-1.384.666-.667 1.079-1.335 1.384-2.126.296-.765.499-1.636.558-2.913.06-1.28.072-1.687.072-4.947s-.015-3.667-.072-4.947c-.06-1.277-.262-2.149-.558-2.913-.306-.789-.718-1.459-1.384-2.126C21.319 1.347 20.651.935 19.86.63c-.765-.297-1.636-.499-2.913-.558C15.667.012 15.26 0 12 0zm0 2.16c3.203 0 3.585.016 4.85.071 1.17.055 1.805.249 2.227.415.562.217.96.477 1.382.896.419.42.679.819.896 1.381.164.422.36 1.057.413 2.227.057 1.266.07 1.646.07 4.85s-.015 3.585-.074 4.85c-.061 1.17-.256 1.805-.421 2.227-.224.562-.479.96-.899 1.382-.419.419-.824.679-1.38.896-.42.164-1.065.36-2.235.413-1.274.057-1.649.07-4.859.07-3.211 0-3.586-.015-4.859-.074-1.171-.061-1.816-.256-2.236-.421-.569-.224-.96-.479-1.379-.899-.421-.419-.69-.824-.9-1.38-.165-.42-.359-1.065-.42-2.235-.045-1.26-.061-1.649-.061-4.844 0-3.196.016-3.586.061-4.861.061-1.17.255-1.814.42-2.234.21-.57.479-.96.9-1.381.419-.419.81-.689 1.379-.898.42-.166 1.051-.361 2.221-.421 1.275-.045 1.65-.06 4.859-.06l.045.03zm0 3.678c-3.405 0-6.162 2.76-6.162 6.162 0 3.405 2.76 6.162 6.162 6.162 3.405 0 6.162-2.76 6.162-6.162 0-3.405-2.76-6.162-6.162-6.162zM12 16c-2.21 0-4-1.79-4-4s1.79-4 4-4 4 1.79 4 4-1.79 4-4 4zm7.846-10.405c0 .795-.646 1.44-1.44 1.44-.795 0-1.44-.646-1.44-1.44 0-.794.646-1.439 1.44-1.439.793-.001 1.44.645 1.44 1.439z"/></svg>
+                    </a>
+
+                    <!-- github -->
+                    <a href="https://github.com/muhsaputra" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0]  transition duration-300 hover:scale-110">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>GitHub</title><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                    </a>
+
+                    <!-- Youtube -->
+                    <a href="https://www.youtube.com/channel/UClAn1OOB25g70Ea1FpzjxbQ" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] transition duration-300 hover:scale-110">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>YouTube</title><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    
+                    <!-- Discord -->
+                    <a href="https://discord.gg/gysjRxvrr6" target="_blank" class="w-9 h-9 mr-3 rounded-full flex justify-center items-center text-[#EBEFF0] transition duration-300 hover:scale-110">
+                        <svg role="img" width="20" class="fill-current" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><title>Discord</title><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+                    </a>
+
+
+
+                </div>
+                <p class="font-medium text-xs pt-2 text-[#EBEFF0] text-center opacity-75">2023 All Rights Reserved By <a href="https://www.instagram.com/muhsaputra._/" target="_blank" class="text-bold text-sky-400">Muhamad Tri Saputra</a></p>
+            </div>
+        </div>
+          </footer>
+      <div>
+    <!-- FOOTER SECTION END -->
+    <!-- Javascript -->
+    <script src="dist/js/script.js"></script>
+        <!-- Aos -->
+        <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init();
+        </script>
+  </body>
+</html>
